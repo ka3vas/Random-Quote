@@ -1,0 +1,71 @@
+blockquote, p, cite, a, button {
+  margin: 0;
+  padding: 0; }
+
+#quoteBox {
+  box-sizing: border-box;
+  width: 550px;
+  transition: all 1s;
+  background: white;
+  padding: 3rem;
+  border-radius: 3px; }
+
+#box {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+#buttonsPanel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.2rem; }
+  #buttonsPanel button {
+    height: 3.8rem;
+    background: gray;
+    transition: all 1s;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; }
+    #buttonsPanel button:focus {
+      outline: 0; }
+
+#socialButtons {
+  display: inline-block; }
+  #socialButtons button {
+    width: 5rem;
+    padding: 0.6rem; }
+
+#newQuote {
+  display: inline-block; }
+  #newQuote button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.6rem; }
+
+html {
+  height: 100%;
+  font-size: 10px; }
+
+body {
+  height: 100%;
+  background: gray;
+  transition: all 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+blockquote {
+  color: gray;
+  transition: all 1s; }
+  blockquote p {
+    font-size: 2.7rem;
+    text-align: center; }
+  blockquote cite {
+    margin-top: 1.6rem;
+    display: block;
+    font-size: 2.2rem;
+    text-align: right; }
+
+i.fa-quote-left {
+  margin-right: 2rem; }

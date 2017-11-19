@@ -1,0 +1,77 @@
+@import 'reset';
+@import 'variables';
+@import 'function/function';
+// Id
+#quoteBox {
+  box-sizing: border-box;
+  width: 550px;
+  transition: $colorTransition;
+  background: white;
+  padding: 3rem;
+  border-radius: 3px;
+}
+#box {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#buttonsPanel {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.2rem;
+  button {
+    height: 3.8rem;
+    background: $mainColor;
+    transition: $colorTransition;
+    color: white;
+    border: none;
+    border-radius:5px;
+    cursor: pointer;
+    &:focus {outline: 0;}
+  }
+}
+#socialButtons {
+  display: inline-block;
+  button {
+    width: 5rem;
+    padding: 0.6rem;
+  }
+}
+#newQuote {
+  display: inline-block;
+  button {
+    padding: 0.6rem 1.2rem;
+    font-size: 1.6rem;
+  }
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+body {
+  height: 100%;
+  background: $mainColor;
+  transition: $colorTransition;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+blockquote {
+  color: gray;
+  transition: $colorTransition;
+  p {
+    font-size: 2.7rem;
+    text-align: center;
+  }
+  cite {
+    margin-top: 1.6rem;
+    display: block;
+    font-size: 2.2rem;
+    text-align: right;
+  }
+}
+i.fa-quote-left {
+  margin-right: 2rem;
+}

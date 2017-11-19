@@ -1,0 +1,7 @@
+@function text-color($mainColor) {
+    @if(lightness($mainColor) > 50) {
+        @return #000;
+    } @else {
+        @return #FFF;
+    }
+}
